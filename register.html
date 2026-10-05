@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="icon" type="image/x-icon" href="ruta/de/tu/favicon.ico">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+     <section class="contenedor">
+       
+        <div class="bloque_izquierdo">
+            <img src="NovaStreams.svg" alt="NovaStream" class="logo_principal" width="500" height="500">
+            <p class="texto">Crea tu cuenta en solo unos pasos.</p>
+        </div>
+
+
+        <div class="bloque_derecho">
+
+            <h1 class="creacion">Crea tu cuenta</h1>
+            
+            <form action="#" method="post" class="formulario">
+                <fieldset>
+                   
+                    <div class="fila_formulario">
+                        <div class="grupo_campo">
+                            <label for="nombres">Nombres: </label>
+                            <input type="text" id="nombres" name="nombres" required/>
+                        </div>
+
+
+                        <div class="grupo_campo">
+                            <label for="apellidos">Apellidos: </label>
+                            <input type="text" id="apellidos" name="apellidos" required/>
+                        </div>
+                    </div>
+                   
+                    <div class="fila_formulario">
+                        <div class="grupo_campo">
+                            <label for="correo">Correo: </label>
+                            <input type="email" id="correo" name="correo" placeholder="wilfredo@gmail.com" required/>
+                        </div>
+
+
+                        <div class="grupo_campo">
+                            <label for="telefono">Teléfono: </label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+573001234567" required/>
+                        </div>
+                    </div>
+                   
+                    <div class="fila_formulario">
+                        <div class="grupo_campo">
+                            <label for="contraseña">Contraseña: </label>
+                            <input type="password" id="contraseña" name="contraseña" minlength="8" required/>
+                        </div>
+                        <div class="grupo_campo">
+                            <label for="confirmar_contraseña">Confirmar Contraseña: </label>
+                            <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" minlength="8" required/>
+                        </div>
+                    </div>
+
+                    <div class="terminos">
+                            <input type="checkbox" id="terminos" name="terminos" required/>
+                            <label for="terminos">Acepto los <a href="terms.html" target="_blank">términos y condiciones</a></label>
+                    </div>
+                   
+                    <div class="vinculacion">
+                        <h1>Elije tu cuenta para vincular</h1>
+                        <a href="#" class="boton_google" title="Vincula tu cuenta de Youtube">
+                            <img src="GoogleLogo.png" alt="Google Logo" class="logos" width="50" height="50">
+                        </a>
+                            <a href="#" class="boton_google" title="Vincula tu cuenta de Twitch">
+                            <img src="TwitchLogo.png" alt="Google Logo" class="logos" width="50" height="50">
+                        </a>
+                        </a>
+                            <a href="#" class="boton_google" title="Vincula tu cuenta de TikTok">
+                            <img src="TikTokLogo.png" alt="Google Logo" class="logos" width="50" height="50">
+                        </a>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn-enviar">Enviar datos</button>
+            </form>
+
+            <p class="inicio_seccion">¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
+
+        </div>
+
+
+    </section>
+
+
+</body>
+</html>
+
