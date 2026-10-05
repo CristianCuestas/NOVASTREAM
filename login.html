@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Sesión - Administrador</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- Barra fija superior (posicionamiento fixed) -->
+    <header class="barra-fija-mango">
+        <h2 class="titulo-barra">Panel Administrador</h2>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="contenedor-kiwi">
+
+        <!-- Logo con posicionamiento absolute -->
+        <a href="bienvenida.html" class="logo-uva">
+            <div class="icono-uva"></div>
+            <span class="texto-uva">Mi Aplicación</span>
+        </a>
+
+        <section class="tarjeta-login-fresa">
+
+            <h1 class="titulo-login">Inicio de Sesión</h1>
+            <p class="descripcion-login">
+                Accede al panel administrativo validando tus credenciales.
+            </p>
+
+            <form action="#" method="post" class="formulario-banana">
+
+                <!-- Campo Usuario -->
+                <div class="grupo-input">
+                    <label for="usuario">Ingrese Usuario</label>
+                    <input type="text" id="usuario" name="usuario"
+                        placeholder="Correo, teléfono o nombre de usuario" required>
+                </div>
+
+                <!-- Campo Contraseña -->
+                <div class="grupo-input">
+                    <label for="password">Ingrese Contraseña</label>
+                    <input type="password" id="password" name="password"
+                        placeholder="Contraseña alfanumérica" required>
+                </div>
+
+                <!-- Captcha -->
+                <div class="grupo-input">
+                    <label>Validación de seguridad</label>
+                    <div class="captcha-cereza">
+                        <div class="captcha-check"></div>
+                        <span>No soy un robot</span>
+                    </div>
+                </div>
+
+                <!-- Botones (Flexbox) -->
+                <div class="botones-flex-melon">
+                    <button type="submit" class="btn-primario">Iniciar sesión</button>
+                    <button type="button" class="btn-secundario"
+                        onclick="location.href='registro.html'">
+                        Registrarse
+                    </button>
+                </div>
+
+                <!-- Recuperación de contraseña -->
+                <p class="recuperar">
+                    ¿Olvidaste tu contraseña?
+                    <a href="restablecer_contrasena.html">Haz clic para restablecerla</a>
+                </p>
+
+            </form>
+
+        </section>
+
+    </div>
+
+</body>
+</html>

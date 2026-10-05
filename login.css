@@ -1,0 +1,210 @@
+/* ===========================
+   PALETA PANTONE OFICIAL
+   =========================== */
+
+:root {
+    --pantone-brilliant-white: #F4F4F4;     /* 11-4001 TCX */
+    --pantone-surf-web: #203A91;            /* 19-3952 TCX */
+    --pantone-pickled-beet: #7A1E48;        /* 19-2420 TCX */
+    --pantone-royal-lilac: #8B5FBF;         /* 18-3531 TCX */
+    --pantone-fuchsia-fedora: #C74375;      /* 18-2330 TCX */
+    --pantone-granita: #8A1C4A;             /* 19-2039 TCX */
+    --pantone-directoire-blue: #2A6FCE;     /* 18-4244 TCX */
+    --pantone-navy-blazer: #1A1F33;         /* 19-3923 TCX */
+    --pantone-aqua-esque: #7FDBD3;          /* 13-5411 TCX */
+    --pantone-vibrant-orange: #F9893D;      /* 16-1364 TCX */
+}
+
+/* ===========================
+   ESTILOS GENERALES
+   =========================== */
+
+body {
+    background: var(--pantone-brilliant-white); /* Fondo principal */
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--pantone-navy-blazer);
+}
+
+/* ===========================
+   BARRA SUPERIOR
+   =========================== */
+
+.barra-fija-mango {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--pantone-surf-web);
+    color: var(--pantone-brilliant-white);
+    padding: 12px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===========================
+   CONTENEDOR PRINCIPAL
+   =========================== */
+
+.contenedor-kiwi {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* ===========================
+   LOGO
+   =========================== */
+
+.logo-uva {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.icono-uva {
+    width: 36px;
+    height: 36px;
+    background: radial-gradient(
+        circle at 30% 30%,
+        var(--pantone-aqua-esque),
+        var(--pantone-directoire-blue)
+    );
+    border-radius: 10px;
+    box-shadow: 0 0 12px var(--pantone-aqua-esque);
+}
+
+.texto-uva {
+    color: var(--pantone-directoire-blue);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* ===========================
+   TARJETA LOGIN
+   =========================== */
+
+.tarjeta-login-fresa {
+    background: var(--pantone-brilliant-white);
+    border: 1px solid var(--pantone-pickled-beet);
+    border-radius: 20px;
+    padding: 30px;
+    width: 380px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.titulo-login {
+    color: var(--pantone-surf-web);
+    margin-bottom: 5px;
+}
+
+.descripcion-login {
+    color: var(--pantone-royal-lilac);
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   FORMULARIO
+   =========================== */
+
+.formulario-banana {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.grupo-input label {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.grupo-input input {
+    padding: 12px;
+    border: 1px solid var(--pantone-granita);
+    border-radius: 10px;
+    background: var(--pantone-brilliant-white);
+    color: var(--pantone-navy-blazer);
+}
+
+/* ===========================
+   CAPTCHA
+   =========================== */
+
+.captcha-cereza {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--pantone-granita);
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--pantone-brilliant-white);
+}
+
+.captcha-check {
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--pantone-pickled-beet);
+    border-radius: 4px;
+}
+
+/* ===========================
+   BOTONES
+   =========================== */
+
+.botones-flex-melon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-primario {
+    background: var(--pantone-directoire-blue);
+    color: var(--pantone-brilliant-white);
+    padding: 12px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primario:hover {
+    background: var(--pantone-surf-web);
+}
+
+.btn-secundario {
+    background: var(--pantone-vibrant-orange);
+    color: var(--pantone-brilliant-white);
+    padding: 12px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-secundario:hover {
+    background: var(--pantone-fuchsia-fedora);
+}
+
+/* ===========================
+   RECUPERACIÓN
+   =========================== */
+
+.recuperar {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.recuperar a {
+    color: var(--pantone-directoire-blue);
+    text-decoration: none;
+}
+
+.recuperar a:hover {
+    text-decoration: underline;
+}
