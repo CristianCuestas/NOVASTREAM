@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.control-modo {
+    display: none;
+}
+
+.pagina {
+    min-height: 100vh;
+    background-color: #EDF1FE;
+    color: #262D3B;
+    transition: 0.3s;
+}
+
+.contenedor {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 20px 40px 80px 40px;
+}
+
+.informacion {
+    width: 500px;
+}
+
+.informacion h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    color: #203C7F;
+    margin-bottom: 20px;
+}
+
+.informacion p {
+    font-size: 18px;
+    color: #262D3B;
+    line-height: 1.5;
+}
+
+.configuracion {
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    border: 2px solid #0063A6;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.luna {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 26px;
+}
+
+.configuracion h2 {
+    color: #203C7F;
+    margin-top: 0;
+}
+
+.configuracion > p {
+    color: #262D3B;
+    line-height: 1.4;
+}
+
+.opcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #4ACAD5;
+    border-radius: 10px;
+    background-color: #EDF1FE;
+    transition: 0.3s;
+}
+
+.texto-opcion {
+    flex: 1;
+}
+
+.opcion h3 {
+    margin: 0 0 8px 0;
+    color: #203C7F;
+}
+
+.opcion p {
+    margin: 0;
+    font-size: 14px;
+    color: #262D3B;
+    line-height: 1.4;
+}
+
+.interruptor {
+    position: relative;
+    width: 52px;
+    height: 28px;
+    margin-left: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.deslizador {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #784D8C;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.deslizador::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #EDF1FE;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.estado {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #C74082;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.control-modo:checked + .pagina {
+    background-color: #262D3B;
+    color: #EDF1FE;
+}
+
+.control-modo:checked + .pagina .informacion h1 {
+    color: #4ACAD5;
+}
+
+.control-modo:checked + .pagina .informacion p {
+    color: #EDF1FE;
+}
+
+.control-modo:checked + .pagina .configuracion {
+    background-color: #203C7F;
+    border-color: #4ACAD5;
+}
+
+.control-modo:checked + .pagina .configuracion h2 {
+    color: #EDF1FE;
+}
+
+.control-modo:checked + .pagina .configuracion > p {
+    color: #EDF1FE;
+}
+
+.control-modo:checked + .pagina .opcion {
+    background-color: #262D3B;
+    border-color: #4ACAD5;
+}
+
+.control-modo:checked + .pagina .opcion h3 {
+    color: #EDF1FE;
+}
+
+.control-modo:checked + .pagina .opcion p {
+    color: #EDF1FE;
+}
+
+.control-modo:checked + .pagina .deslizador {
+    background-color: #C74082;
+}
+
+.control-modo:checked + .pagina .deslizador::before {
+    transform: translateX(24px);
+}
+
+@media (max-width: 768px) {
+
+    .contenedor {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px 80px 20px;
+    }
+
+    .informacion {
+        width: 100%;
+        text-align: center;
+    }
+
+    .informacion h1 {
+        font-size: 30px;
+    }
+
+    .configuracion {
+        width: 100%;
+        max-width: 400px;
+        margin: 0;
+    }
+
+    .opcion {
+        gap: 15px;
+    }
+
+    .estado {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+

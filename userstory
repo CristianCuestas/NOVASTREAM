@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo nocturno - NovaStreams</title>
+    <link rel="stylesheet" href="stely.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="modo" class="control-modo">
+
+    <div class="pagina">
+
+        <div class="contenedor">
+
+            <section class="informacion">
+
+                <h1>Modo nocturno</h1>
+
+                <p>
+                    Disfruta de NovaStreams con una apariencia más
+                    cómoda para ambientes con poca luz.
+                </p>
+
+            </section>
+
+
+            <section class="configuracion">
+
+                <div class="luna">🌙</div>
+
+                <h2>Preferencias de apariencia</h2>
+
+                <p>
+                    Personaliza la visualización de la plataforma.
+                </p>
+
+
+                <div class="opcion">
+
+                    <div class="texto-opcion">
+
+                        <h3>Modo nocturno</h3>
+
+                        <p>
+                            Reduce el brillo utilizando colores oscuros.
+                        </p>
+
+                    </div>
+
+
+                    <label for="modo" class="interruptor">
+
+                        <span class="deslizador"></span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <div class="estado">
+            Modo nocturno
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
