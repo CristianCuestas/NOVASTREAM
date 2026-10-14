@@ -89,7 +89,7 @@ body {
     margin-bottom: 30px;
 }
 .button.btn-register {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 .planes {
     display: flex;
@@ -124,7 +124,7 @@ body {
     margin-bottom: 30px;
 }
 details {
-    background-color: var(--pantone-royal-lilac);
+    background-color: var(--pantone-navy-blazer);
     padding: 15px 20px;
     margin-bottom: 10px;
     border-radius: 8px;
