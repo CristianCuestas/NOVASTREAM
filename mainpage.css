@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0044;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3;
+}
+
+.btn:hover {
+    background-color: #d60038;
+}
+
+.navigationbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navigation-buttons {
+    margin-left: 10px;
+}
+
+.logo-principal {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #000, #1a1a1a);
+}
+.logo-principal-logo {
+    font-size: 4rem;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.logo-principal-texto {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.button btn-register {
+    font-size: 1.1rem;
+}
+.planes {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+}
+.plan {
+    width: 30%;
+    background-color: #222;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+.plan:hover {
+    transform: translateY(-5px);
+    background-color: #2a2a2a;
+}
+.plan h2 {
+    margin-bottom: 15px;
+}
+.plan p {
+    margin-bottom: 20px;
+}
+.faq {
+    padding: 60px 20px;
+    background-color: #111;
+}
+.faq h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+details {
+    background-color: #222;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+}
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 25px;
+}
+summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+details p {
+    margin-top: 10px;
+    animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: q1; transform: translateY(0); }
+}
+.terminos {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+}
+.terminos h2 {
+    margin-bottom: 20px;
+}
+.footer {
+    padding: 30px 20px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer a {
+    color: #ff0044;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.idioma select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .planes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .logo-principal-logo {
+        font-size: 3rem;
+    }
+    .logo-principal-texto {
+        font-size: 1rem;
+    }
+    .navigationbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 600px) {
+    .navigationbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navigation-buttons {
+        margin-top: 10px;
+    }
+    .logo-principal-logo {
+        font-size: 2.5rem;
+    }
+    .logo-principal-texto {
+        font-size: 1rem;
+    }
+    .button btn-register {
+        padding: 12px 25px;
+    }
+    .plan {
+        width: 100%;
+    }
+    details {
+        font-size: 0.9rem;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social {
+        margin-top: 10px;
+    }
+}
