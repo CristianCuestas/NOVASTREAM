@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-usuario</title>
+    <link rel="stylesheet" href="login-usuario.css">
+</head>
+<body>
+    <header class="navigationbar">
+        <div class="logo">
+            <a href="mainpage.html" class="button btn-mainpage">
+                <img src="logo.png" alt="Logo de Novastream" class="logo-image">
+            </a>
+        </div>
+        <nav class="navigation-buttons">
+            <a href="register.html" class="button btn-register">Registro</a>
+        </nav>
+    </header>
+    <main class="login-main-user">
+        <section class="login-usuario">
+            <h1 class="login-title">INICIAR SESIÓN</h1>
+            <p class="login-text">Ingresa con tu correo electrónico, teléfono o nombre de usuario</p>
+        </section>
+        <section class="login-container">
+            <form action="" method="post" class="login-form">
+                <label for="username" class="login-label">Email, telefono o nombre de usuario:</label>
+                <input type="text" id="username" name="username" required autocomplete="username">
+                <button type="submit" class="button btn-login">CONTINUAR</button>
+            </form>
+        </section>
+        <section class="new-user">
+            <h2 class="register-reminder">¿Aún no tienes cuenta? <a href="register.html" class="button btn-register">Regístrate aquí</a></h2>
+        </section>
+    </main>
+</body>
+</html>
