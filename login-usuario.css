@@ -35,20 +35,26 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding-top: 120px;
+    padding-top: 140px;
 }
-.button.button.btn-mainpage {
+.btn-mainpage {
     display: inline-block;
-    padding: 5px 10px;
-    background-color: var(--pantone-dazzling-blue);
-    color: var(--pantone-placid-blue);
+    padding: 0;
+    background-color: transparent;
+    border: none;
     text-decoration: none;
-    border-radius: 8px;
-    transition: 0.5s;
+    transition: transform 0.2s ease;
 }
-.button.button.btn-mainpage:hover {
-    background-color: var(--pantone-pickled-beet);
-    color: var(--pantone-brilliant-white);
+.button.btn-mainpage:hover {
+    transform: scale(1.05);
+}
+.logo-image {
+    display: block;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
 }
 .button.button.btn-register {
     display: inline-block;
@@ -114,7 +120,7 @@ body {
     padding: 14px;
     border-radius: 8px;
     border: 1px solid var(--pantone-lavender-fog);
-    background-color: var(--pantone-directoire-blue);
+    background-color: var(--pantone-lavender-fog);
     color: var(--pantone-black-6);
     font-size: 1rem;
     outline: none;

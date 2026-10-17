@@ -121,36 +121,50 @@ body {
 }
 .faq h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--pantone-brilliant-white)
 }
 details {
     background-color: var(--pantone-navy-blazer);
-    padding: 15px 20px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    padding: 18px 22px;
+    margin-bottom: 18px;
+    border-radius: 10px;
     border: 1px solid var(--pantone-strong-blue);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);    
 }
 summary {
     font-weight: bold;
     cursor: pointer;
     list-style: none;
     position: relative;
-    padding-right: 25px;
+    padding-right: 30px;
+    font-size: 1.1rem;
+    color: var(--pantone-blue-blush)
 }
 summary::after {
-    content: '+';
+    content: '▾';
     position: absolute;
     right: 0;
     top: 0;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     transition: transform 0.3s ease;
+    color: var(--pantone-aquatic)
 }
 details[open] summary::after {
     transform: rotate(180deg);
 }
 details p {
-    margin-top: 10px;
+    margin-top: 18px;
+    padding: 15px 10px;
+    background: rgba(255,255,255,0.05);
+    border-left: 3px solid var(--pantone-directoire-blue);
+    border-radius: 6px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--pantone-white-jade);
     animation: fadeIn 0.3s ease;
 }
 @keyframes fadeIn {
