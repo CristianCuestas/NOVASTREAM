@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de registro</title>
-    <link rel="icon" type="image/x-icon" href="images/NovaStreams.svg">
+    <link rel="icon" type="image/x-icon" href="images/NovaStreams.png">
     <link rel="stylesheet" href="css/register.css">
+
+    <!--Se llama al Tailwind y el siguiente script es para evitar que me sobreescriba mi CSS.-->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        corePlugins: {
+        preflight: false
+        }
+    }
+    </script>
 </head>
 <body>
      <section class="contenedor">
        
-        <div class="bloque_izquierdo">
-            <img src="images/NovaStreams.svg" alt="NovaStream" class="logo_principal" width="500" height="500">
+        <div class="bloque_izquierdo flex flex-1 min-w-0 flex-col justify-center items-center gap-6 p-[4vw] text-center">
+            <img src="images/NovaStreams.png" alt="NovaStream" class="logo_principal" width="500" height="500">
             <p class="texto">Crea tu cuenta en solo unos pasos.</p>
         </div>
 
@@ -19,11 +30,13 @@
         <div class="bloque_derecho">
 
             <h1 class="creacion">Crea tu cuenta</h1>
+
+            <!--Se modifica la clase del formulario para utilizar Tailwind-->
             
             <form action="#" method="post" class="formulario">
                 <fieldset>
                    
-                    <div class="fila_formulario">
+                    <div class="fila_formulario flex gap-4">
                         <div class="grupo_campo">
                             <label for="nombres">Nombres: </label>
                             <input type="text" id="nombres" name="nombres" required/>
@@ -35,8 +48,32 @@
                             <input type="text" id="apellidos" name="apellidos" required/>
                         </div>
                     </div>
+
+                    <div class="fila_formulario flex gap-4">
+                        <div class="grupo_campo">
+
+                            <label for="pais">País:</label>
+                            <select id="pais" name="pais" class="pais_select" required>
+                                <option value="" disabled selected>Selecciona un país</option>
+                                <option value="CO">Colombia</option>
+                                <option value="MX">México</option>
+                                <option value="AR">Argentina</option>
+                                <option value="CL">Chile</option>
+                                <option value="PE">Perú</option>
+                                <option value="ES">España</option>
+                                <option value="US">Estados Unidos</option>
+                            </select>
+                        
+                        </div>
+
+                        <div class="grupo_campo">
+                            <label for="nickname">Nombre de Usuario: </label>
+                            <input type="text" id="nickname" name="nickname" required/>
+                        </div>
+
+                    </div>
                    
-                    <div class="fila_formulario">
+                    <div class="fila_formulario flex gap-4">
                         <div class="grupo_campo">
                             <label for="correo">Correo: </label>
                             <input type="email" id="correo" name="correo" placeholder="wilfredo@gmail.com" required/>
@@ -49,7 +86,7 @@
                         </div>
                     </div>
                    
-                    <div class="fila_formulario">
+                    <div class="fila_formulario flex gap-4">
                         <div class="grupo_campo">
                             <label for="contraseña">Contraseña: </label>
                             <input type="password" id="contraseña" name="contraseña" minlength="8" required/>
@@ -66,7 +103,7 @@
                     </div>
                    
                     <div class="vinculacion">
-                        <h1>Elije tu cuenta para vincular</h1>
+                        <h2>Elige tu cuenta para vincular</h2>
                         <a href="#" class="boton_google" title="Vincula tu cuenta de Youtube">
                             <img src="images/GoogleLogo.png" alt="Google Logo" class="logos" width="50" height="50">
                         </a>

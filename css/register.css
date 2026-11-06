@@ -57,6 +57,23 @@ section.contenedor::before {
   left: -52vw;
   bottom: -52vw;
   background: linear-gradient(var(--pantone-surf-the-web) 0%, var(--pantone-navy-blazer) 100%);
+  
+  animation-name: background_animation;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background_animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+
 }
 
 section.contenedor::after {
@@ -65,8 +82,13 @@ section.contenedor::after {
   right: -52vw;
   top: -52vw;
   background: linear-gradient(var(--pantone-royal-lilac) 0%, var(--pantone-dazzling-blue) 55%, var(--pantone-directoire-blue) 100%);
+
+  animation-name: background_animation;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
 }
 
+/*
 div.bloque_izquierdo {
   flex: 1;
   min-width: 0;
@@ -78,6 +100,8 @@ div.bloque_izquierdo {
   padding: 4vw;
   text-align: center;
 }
+  Comentado para el uso de Tailwind en el HTML. 
+*/
 
 .bloque_izquierdo img {
   max-width: min(100%, 380px);
@@ -127,10 +151,14 @@ fieldset {
   border-radius: 12px;
 }
 
+/*
 div.fila_formulario {
   display: flex;
   gap: 16px;
 }
+
+Se comenta debido a que se esta utilizando con Tailwind desde el HTML.
+*/
 
 .grupo_campo {
   flex: 1;
@@ -144,6 +172,17 @@ div.fila_formulario {
 .grupo_campo label {
   font-size: 14px;
   color: var(--pantone-lavender-fog);
+}
+
+.pais_select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--pantone-dazzling-blue);
+  background-color: var(--pantone-brilliant-white);
+  border: 2px solid var(--pantone-brilliant-white);
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
 }
 
 .grupo_campo input {
@@ -164,6 +203,23 @@ div.fila_formulario {
 .grupo_campo input:focus {
   outline: none;
   border-color: var(--pantone-royal-lilac);
+}
+
+.pais_select option {
+  color: var(--pantone-navy-blazer);
+}
+
+.pais_select:invalid {
+  color: var(--pantone-dazzling-blue);
+}
+
+.pais_select:focus {
+  outline: none;
+  border-color: var(--pantone-royal-lilac);
+}
+
+.pais_select option {
+  color: var(--pantone-dazzling-blue);
 }
 
 .terminos {
@@ -189,7 +245,7 @@ div.fila_formulario {
   border-top: 1px solid var(--pantone-strong-blue);
 }
 
-.vinculacion h1 {
+.vinculacion h2 {
   width: 100%;
   text-align: center;
   font-size: 14px;
