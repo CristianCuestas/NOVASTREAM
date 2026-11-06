@@ -8,8 +8,27 @@
 </head>
 <body>
     <header class="navigationbar">
-        <div class="logo">Novastream</div>
-        <nav class="navigation-buttons">
+        <a href="#" class="logo">
+            NOVASTREAM
+        </a>
+        <nav class="navigation-menu">
+            <details class="navigation-menu">
+                <summary class="menu-boton">Menú</summary>
+                <div class="menu-contenido">
+                    <a href="#">Inicio</a>
+                    <a href="#planes">Planes</a>
+                    <a href="#faq">Preguntas frecuentes</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#social">Redes sociales</a>
+                </div>
+            </details>
+            <div class="navigation-links">
+                <a href="#planes">Planes</a>
+                <a href="#faq">Preguntas frecuentes</a>
+                <a href="#nosotros">Nosotros</a>
+            </div>
+        </nav>
+        <nav class="navigation-buttons" aria-label="Acceso de usuario">
             <a href="login-usuario.html" class="button btn-login">Ingreso</a>
             <a href="register.html" class="button btn-register">Registro</a>
         </nav>
@@ -20,7 +39,7 @@
         <p class="logo-principal-texto">Controla tus datos de forma segura y eficiente</p>
         <a href="register.html" class="button btn-register">Registrate hoy</a>
     </section>
-    <section class="planes">
+    <section class="planes" id="planes">
         <div class="plan">
             <h2>Plan básico</h2>
             <p>Acceso limitado a funciones esenciales</p>
@@ -37,7 +56,7 @@
             <a href="#" class="button btn-select">Seleccionar</a>
         </div>
     </section>
-    <section class="faq">
+    <section class="faq" id="faq">
         <h2>Preguntas frecuentes</h2>
         <details class="faq-item">
             <summary>¿Qué es Novastream?</summary>
@@ -70,7 +89,7 @@
         <a href="terms.html" class="button btn-terms">Leer términos y condiciones</a>
     </section>
     <footer class="footer">
-        <div class="social">
+        <div class="social" id="social">
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
             <a href="#">TikTok</a>
