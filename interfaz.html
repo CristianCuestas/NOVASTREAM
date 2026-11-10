@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVASTREAM | Menú principal</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="interfaz.css" />
+
+  <script src="script.js" defer></script>
+</head>
+
+<body class="flex flex-col sm:flex-row min-h-screen">
+
+  <!-- ================= MENÚ LATERAL ================= -->
+  <aside class="sidebar flex flex-col shrink-0 gap-6 p-5
+                w-full sm:w-64 lg:w-72
+                sm:h-screen sm:sticky sm:top-0 sm:overflow-y-auto
+                max-sm:flex-row max-sm:items-center max-sm:overflow-x-auto max-sm:gap-4 max-sm:p-3">
+
+    <a href="#inicio" class="brand flex items-center gap-3" aria-label="Ir al inicio de NOVASTREAM">
+      <img class="brand-logo w-11 h-11 object-contain" src="logonova.png" alt="Logo de NOVASTREAM" />
+      <div class="brand-name text-xl font-extrabold tracking-wide">NOVA<span>STREAM</span></div>
+    </a>
+
+    <nav class="nav-section flex flex-col gap-1 max-sm:flex-row max-sm:gap-2" aria-label="Descubrir">
+      <div class="nav-title">Descubrir</div>
+      <a href="#inicio" class="nav-item active flex items-center gap-3"><span class="icon">⌂</span><span class="label">Inicio</span></a>
+      <a href="#en-vivo" class="nav-item flex items-center gap-3"><span class="icon">◉</span><span class="label">En vivo</span><span></span></a>
+      <a href="#explorar" class="nav-item flex items-center gap-3"><span class="icon">✦</span><span class="label">Explorar</span></a>
+      <a href="#categorias" class="nav-item flex items-center gap-3"><span class="icon">▦</span><span class="label">Categorías</span></a>
+      <a href="#streamers" class="nav-item flex items-center gap-3"><span class="icon">☺</span><span class="label">Streamers</span></a>
+      <a href="#clips" class="nav-item flex items-center gap-3"><span class="icon">▶</span><span class="label">Clips</span><span/span></a>
+    </nav>
+
+    <nav class="nav-section flex flex-col gap-1 max-sm:flex-row max-sm:gap-2" aria-label="Mi estudio">
+      <div class="nav-title">Mis Seguimientos</div>
+      <a href="#panel" class="nav-item flex items-center gap-3"><span class="icon">▤</span><span class="label">Panel de control</span></a>
+      <a href="#metricas" class="nav-item flex items-center gap-3"><span class="icon">▲</span><span class="label">Metricas</span></a>
+      <a href="#ingresos" class="nav-item flex items-center gap-3"><span class="icon">$</span><span class="label">Ingresos</span></a>
+      <a href="#chat" class="nav-item flex items-center gap-3"><span class="icon">✉</span><span class="label">Chat y moderación</span></span></a>
+      <a href="#suscriptores" class="nav-item flex items-center gap-3"><span class="icon">♥</span><span class="label">Suscriptores</span></a>
+      <a href="#programacion" class="nav-item flex items-center gap-3"><span class="icon">▣</span><span class="label">Programación</span></a>
+    </nav>
+
+    <nav class="nav-section flex flex-col gap-1 max-sm:flex-row max-sm:gap-2" aria-label="Cuenta">
+      <div class="nav-title">Cuenta</div>
+      <a href="#planes" class="nav-item flex items-center gap-3"><span class="icon">★</span><span class="label">Planes</span></a>
+      <a href="#configuracion" class="nav-item flex items-center gap-3"><span class="icon">⚙</span><span class="label">Configuración</span></a>
+      <a href="#ayuda" class="nav-item flex items-center gap-3"><span class="icon">?</span><span class="label">Ayuda</span></a>
+    </nav>
+
+    <div class="sidebar-footer mt-auto">
+      <div class="upgrade-card">
+        <h4>Pasate a Plan Premium </h4>
+        <p>Transmite en 4K, activa analíticas avanzadas y más.</p>
+        <button type="button" class="btn-small" data-go="planes">Ver planes</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <main class="flex-1 p-5 md:p-8 lg:p-12">
+
+    <!-- ===== Vista: Inicio ===== -->
+    <div id="vista-inicio" class="view flex flex-col gap-10">
+
+      <section class="hero flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div class="flex flex-col gap-3 max-w-xl">
+          <h1 class="hero-title text-3xl md:text-5xl font-extrabold">Transmite. Conecta. <span>Brilla.</span></h1>
+          <p class="text-slate-400">Controla tus datos de forma segura y eficiente.</p>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="#panel" class="btn-primary inline-block text-center">Empezar a transmitir</a>
+            <a href="#en-vivo" class="btn-ghost inline-block text-center">Ver en vivo</a>
+          </div>
+        </div>
+      </section>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== Vista: Planes ===== -->
+    <div id="vista-planes" class="view flex flex-col gap-4" hidden>
+      <h2 class="text-2xl font-bold">Planes</h2>
+
+      <div class="flex flex-col md:flex-row gap-5">
+        <article class="plan-card flex-1 flex flex-col gap-3 p-6">
+          <h3 class="text-xl font-bold"> Plan Básico</h3>
+          <p class="text-slate-400">Acceso limitado a funciones esenciales</p>
+          <button type="button" class="btn-primary mt-auto" data-plan="Plan Básico">Elegir plan</button>
+        </article>
+        <article class="plan-card featured flex-1 flex flex-col gap-3 p-6">
+          <h3 class="text-xl font-bold">Plan Pro</h3>
+          <p class="text-slate-400">Acceso limitado a todas las funciones y soporte semanal</p>
+          <p class="plan-price"></p>
+          <button type="button" class="btn-primary mt-auto" data-plan="Plan Pro">Elegir plan</button>
+        </article>
+        </article>
+        <article class="plan-card featured flex-1 flex flex-col gap-3 p-6">
+          <h3 class="text-xl font-bold"> Plan Premium</h3>
+          <p class="text-slate-400">Acceso completo a todas las funciones y soporte diario</p>
+          <p class="plan-price"></p>
+          <button type="button" class="btn-primary mt-auto" data-plan="PlanPremium">Elegir plan</button>
+        </article>
+      </div>
+    </div>
+
+    <!-- ===== Vista genérica: para secciones que aún no tienen contenido ===== -->
+    <div id="vista-generica" class="view flex flex-col items-start gap-4" hidden>
+      <h2 id="generica-titulo" class="text-2xl font-bold">Sección</h2>
+      <a href="#inicio" class="btn-ghost inline-block text-center">Volver al inicio</a>
+    </div>
+
+  </main>
+
+  <!-- Aviso emergente (lo usa script.js) -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
