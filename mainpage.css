@@ -517,14 +517,26 @@ label:focus-visible {
 @media (max-width: 767px) {
     .navigationbar {
         grid-template-columns: 1fr auto;
+        grid-template-areas:
+        "logo buttons"
+        "menu bottons";
+        justify-items: stretch;
+        align-items: center;
+    }
+    .logo {
+        grid-area: logo;
+        justify-self: start;
     }
     .navigation-menu {
-        grid-column: 1 / -1;
-        order: 3;
+        grid-area: menu;
+        justify-self: start;
+        justify-content: flex-start;
+        width: auto;
     }
     .navigation-buttons {
+        grid-area: buttons;
+        justify-self: end;
         width: auto;
-        justify-content: flex-end;
     }
     .navigation-buttons .button {
         min-height: 40px;
@@ -540,7 +552,7 @@ label:focus-visible {
         filter: none;
     }
     .equipo .miembro:hover {
-        transform: scale(1.03);
+        transform: scale(1.5);
     }
    .footer {
         flex-direction: column;
@@ -560,24 +572,34 @@ label:focus-visible {
 @media (max-width: 480px) {
     .navigationbar {
         grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 0.75rem;
+        grid-template-areas:
+        "logo"
+        "menu"
+        "buttons";
+        justify-items: start;
+        align-items: center;
+        gap: 0.5rem;
     }
     .logo {
-        text-align: center;
+        grid-area: logo;
+        justify-self: start;
+        text-align: left;
     }
     .navigation-menu {
-        grid-column: 1;
-        flex-direction: column;
-        gap: 0.75rem;
+        grid-area: menu;
+        justify-self: start;
+        justify-content: flex-start;
+        width: auto;
     }
     .navigation-buttons {
-        width: 100%;
-        justify-content: center;
+        grid-area: buttons;
+        justify-self: start;
+        justify-content: flex-start;
+        width: auto;
     }
     .navigation-buttons .button {
-        flex: 1;
-        max-width: 150px;
+        flex: initial;
+        max-width: none;
     }
     .equipo {
         grid-template-columns: 1fr;
