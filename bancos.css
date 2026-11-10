@@ -1,0 +1,434 @@
+
+/* ===== ESTILOS GENERALES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    color: #FFFFFF;
+    background: linear-gradient(
+        135deg,
+        #282D3C 0%,
+        #101820 100%
+    );
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: 65px auto;
+    text-align: center;
+}
+/* ===== ENCABEZADO ===== */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 22px 7%;
+    background: linear-gradient(110deg, #14275E, #203C7F, #56316F);
+    color: white;
+    box-shadow: 0 8px 20px rgba(20, 39, 94, 0.20);
+}
+
+/* LOGO NOVASTREAMS */
+
+.marca {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:bold;
+    white-space:nowrap;
+    letter-spacing: 1px;
+}
+
+
+.logo span {
+    color: #FF69B4;
+}
+
+.logo strong {
+    color: #9b6de3;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 11px 17px;
+    border: 1px solid #FFFFFF55;
+    border-radius: 25px;
+    font-size: 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: white;
+    color: #203C7F;
+    transform: translateY(-2px);
+}
+.contenedor h1 {
+    color: #203C7F;
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.descripcion {
+    color: #646B89;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 45px;
+}
+
+/* ===== TARJETAS BANCARIAS ===== */
+.bancos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    text-align: center;
+}
+
+.tarjeta {
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    padding: 35px 25px;
+    border: 1px solid #E2E6FA;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px #293C7D12;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #315DFF, #E83E91, #A66BCE);
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 38px #293C7D25;
+}
+
+.logo-banco {
+    width: 82px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 22px;
+    border-radius: 24px;
+    font-size: 27px;
+    font-weight: 900;
+    box-shadow: 0 8px 18px #203C7F18;
+}
+
+.bancolombia {
+    background: linear-gradient(135deg, #FFDC38, #FFAE00);
+    color: #29204F;
+}
+
+.nu {
+    background: linear-gradient(135deg, #8D42FF, #C16AFF);
+    color: white;
+}
+
+.bbva {
+    background: linear-gradient(135deg, #1464F6, #00A6FF);
+    color: white;
+    font-size: 22px;
+}
+
+.davivienda {
+    background: linear-gradient(135deg, #FF425B, #C90035);
+    color: white;
+    font-size: 35px;
+}
+
+.tarjeta h2 {
+    color: #203C7F;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    color: #777D98;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* ===== BOTONES DE LOS BANCOS ===== */
+.boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 155px;
+    padding: 13px 25px;
+    margin-top: 15px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(
+        100deg,
+        #315DFF,
+        #784DCE,
+        #E83E91
+    );
+
+    box-shadow: 0 7px 18px #784DCE40;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.boton:hover {
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    box-shadow: 0 11px 24px #784DCE60;
+}
+
+/* ===== AVISO DE SEGURIDAD ===== */
+.aviso {
+    margin: 40px auto 25px;
+    max-width: 760px;
+    padding: 19px 24px;
+    color: #203C7F;
+    background: #FFFFFFB8;
+    border: 1px solid #D6DFFF;
+    border-left: 5px solid #E83E91;
+    border-radius: 14px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* ===== BOTÓN VOLVER ===== */
+.volver {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 13px 24px;
+    color: #203C7F;
+    background: white;
+    border: 2px solid #315DFF;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.volver:hover {
+    color: white;
+    background: #203C7F;
+    border-color: #203C7F;
+    transform: translateY(-2px);
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.pie {
+    margin-top: 70px;
+    padding: 25px 15px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(110deg, #14275E, #4D233D);
+    font-size: 14px;
+}
+
+/* ===== ADAPTACIÓN A CELULARES ===== */
+@media (max-width: 650px) {
+    .encabezado {
+        justify-content: center;
+        text-align: center;
+        padding: 22px 5%;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .contenedor {
+        margin: 40px auto;
+    }
+
+    .bancos {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .tarjeta {
+        padding: 30px 20px;
+    }
+
+    .descripcion {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .pie {
+        margin-top: 45px;
+    }
+}
+
+/* AJUSTES PARA ORGANIZAR LAS TARJETAS BANCARIAS */
+
+.bancos {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+.tarjeta {
+    width: 100%;
+    min-width: 0;
+    min-height: 280px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(32, 60, 127, 0.12);
+}
+
+.logo-banco {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.logo-banco img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+.tarjeta h2 {
+    margin: 8px 0;
+    color: #203C7F;
+    text-align: center;
+}
+
+.tarjeta p {
+    text-align: center;
+    margin: 8px 0 16px;
+}
+
+.tarjeta .boton {
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+@media (max-width: 650px) {
+    .bancos {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .tarjeta {
+        min-height: 250px;
+    }
+}
+/* ENCABEZADO NOVASTREAMS */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 22px 7%;
+}
+
+.marca {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.marca span {
+    color: #FF69B4;
+}
+
+/* ===== MENÚ SUPERIOR ===== */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 20px;
+
+    color: #282D3C;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    background: #ffffff;
+    border: 1px solid #FFFFFF55;
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #ffffff;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+}
+
+@media (max-width: 650px) {
+    .encabezado {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+}
