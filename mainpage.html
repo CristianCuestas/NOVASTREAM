@@ -8,80 +8,158 @@
 </head>
 <body>
     <header class="navigationbar">
-        <a href="#" class="logo">
-            NOVASTREAM
-        </a>
-        <nav class="navigation-menu">
-            <details class="navigation-menu">
-                <summary class="menu-boton">Menú</summary>
-                <div class="menu-contenido">
-                    <a href="#">Inicio</a>
-                    <a href="#planes">Planes</a>
-                    <a href="#faq">Preguntas frecuentes</a>
-                    <a href="#nosotros">Nosotros</a>
-                    <a href="#social">Redes sociales</a>
-                </div>
-            </details>
-            <div class="navigation-links">
-                <a href="#planes">Planes</a>
-                <a href="#faq">Preguntas frecuentes</a>
-                <a href="#nosotros">Nosotros</a>
+    <a href="#" class="logo">
+        NOVASTREAM
+    </a>
+
+    <nav class="navigation-menu" aria-label="Navegación principal">
+        <details class="menu-desplegable">
+            <summary class="menu-boton">Menú</summary>
+
+            <div class="menu-contenido">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#planes">Planes</a></li>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#social">Redes sociales</a></li>
+                </ul>
             </div>
-        </nav>
-        <nav class="navigation-buttons" aria-label="Acceso de usuario">
-            <a href="login-usuario.html" class="button btn-login">Ingreso</a>
-            <a href="register.html" class="button btn-register">Registro</a>
-        </nav>
-    </header>
+        </details>
+
+        <div class="navigation-links">
+            <a href="#planes">Planes</a>
+            <a href="#faq">Preguntas frecuentes</a>
+            <a href="#nosotros">Nosotros</a>
+        </div>
+    </nav>
+
+    <nav class="navigation-buttons" aria-label="Acceso de usuario">
+        <a href="login-usuario.html" class="button btn-login">Ingreso</a>
+        <a href="register.html" class="button btn-register">Registro</a>
+    </nav>
+</header>
     <section class="logo-principal">
         <h1 class="logo-principal-logo">NOVASTREAM</h1>
-        <img src="img/ISOTIPO.png" alt="Logotipo NOVASTREAM" class="logo-imagen"></img>
+        <img src="img/ISOTIPO.png" alt="Logotipo NOVASTREAM" class="logo-imagen">
         <p class="logo-principal-texto">Controla tus datos de forma segura y eficiente</p>
         <a href="register.html" class="button btn-register">Registrate hoy</a>
     </section>
     <section class="planes" id="planes">
-        <div class="plan">
+
+    <input type="radio" name="periodo" id="mensual" checked>
+    <input type="radio" name="periodo" id="anual">
+
+    <div class="selector-periodo">
+        <label for="mensual">Mensual</label>
+        <label for="anual">Anual</label>
+    </div>
+
+    <div class="contenedor-planes">
+
+        <article class="plan">
             <h2>Plan básico</h2>
             <p>Acceso limitado a funciones esenciales</p>
+
+            <div class="precio precio-mensual">
+                $XX.XXX
+                <span>/mes</span>
+            </div>
+
+            <div class="precio precio-anual">
+                $XXX.XXX
+                <span>/año</span>
+            </div>
+
             <a href="#" class="button btn-select">Seleccionar</a>
-        </div>
-        <div class="plan">
+        </article>
+
+        <article class="plan plan-destacado">
+            <span class="etiqueta-plan">Recomendado</span>
+
             <h2>Plan PRO</h2>
-            <p>Acceso limitado a todas las funciones y soporte semanal</p>
+            <p>Acceso a todas las funciones y soporte semanal</p>
+
+            <div class="precio precio-mensual">
+                $XX.XXX
+                <span>/mes</span>
+            </div>
+
+            <div class="precio precio-anual">
+                $XXX.XXX
+                <span>/año</span>
+            </div>
+
             <a href="#" class="button btn-select">Seleccionar</a>
-        </div>
-        <div class="plan">
+        </article>
+
+        <article class="plan">
             <h2>Plan Premium</h2>
             <p>Acceso completo a todas las funciones y soporte diario</p>
+
+            <div class="precio precio-mensual">
+                $XX.XXX
+                <span>/mes</span>
+            </div>
+
+            <div class="precio precio-anual">
+                $XXX.XXX
+                <span>/año</span>
+            </div>
+
             <a href="#" class="button btn-select">Seleccionar</a>
-        </div>
-    </section>
+        </article>
+
+    </div>
+</section>
     <section class="faq" id="faq">
         <h2>Preguntas frecuentes</h2>
         <details class="faq-item">
             <summary>¿Qué es Novastream?</summary>
-            <p>Novastream es una plataforma que te permite controlar tus datos de forma segura y eficiente.</p>
+            <p>Novastream es una plataforma diseñada para facilitar la gestión y el control de tus datos de forma segura, organizada y eficiente. Nuestro objetivo es ofrecer una experiencia sencilla e intuitiva que permita acceder a diferentes funcionalidades desde un mismo lugar, adaptándose a las necesidades de cada usuario.</p>
         </details>
         <details class="faq-item">
             <summary>¿Cómo puedo registrarme?</summary>
-            <p>Puedes registrarte haciendo clic en el botón "Registro" en la parte superior de la página.</p>
+            <p>Puedes crear tu cuenta haciendo clic en el botón "Registro", ubicado en la parte superior de la página, o mediante el botón "Regístrate hoy". Una vez allí, deberás completar la información solicitada para crear tu perfil y posteriormente podrás acceder a Novastream utilizando tus datos de ingreso.</p>
         </details>
         <details class="faq-item">
             <summary>¿Qué planes están disponibles?</summary>
-            <p>Ofrecemos tres planes: Básico, PRO y Premium, cada uno con diferentes niveles de acceso y soporte.</p>
+            <p>Novastream cuenta con tres alternativas: Básico, PRO y Premium. Cada plan proporciona un nivel diferente de acceso a las funcionalidades de la plataforma y distintas opciones de soporte. De esta manera, puedes seleccionar la alternativa que mejor se adapte a tus necesidades y al nivel de servicio que buscas.</p>
         </details>
         <details class="faq-item">
             <summary>¿Puedo cambiar de plan más adelante?</summary>
-            <p>Sí, puedes cambiar de plan en cualquier momento desde tu cuenta.</p>
+            <p>Sí. La plataforma está pensada para que puedas elegir el plan que mejor responda a tus necesidades. Si más adelante necesitas acceder a otras funcionalidades o deseas utilizar un nivel de servicio diferente, podrás cambiar tu plan desde las opciones disponibles para tu cuenta.</p>
         </details>
         <details class="faq-item">
             <summary>¿Cómo puedo contactar al soporte?</summary>
-            <p>Puedes contactar al soporte a través de nuestro formulario de contacto o enviando un correo electrónico a soporte@novastream.com</p>
+            <p>Si necesitas ayuda con el funcionamiento de Novastream, tienes alguna inquietud relacionada con tu cuenta o requieres orientación sobre la plataforma, podrás comunicarte con nuestro equipo de soporte mediante los canales de atención habilitados. También puedes escribir al correo soporte@novastream.com para realizar tus consultas.</p>
         </details>
         <details class="faq-item">
             <summary>¿Puedo cancelar cuando quiera?</summary>
-            <p>Sí, puedes cancelar tu suscripción en cualquier momento desde tu cuenta (Revisa términos y condiciones).</p>
+            <p>Sí. Puedes solicitar la cancelación de tu suscripción cuando lo necesites desde las opciones disponibles en tu cuenta. Antes de realizar el proceso, te recomendamos consultar los términos y condiciones de Novastream para conocer las condiciones aplicables a tu suscripción y cualquier aspecto relacionado con la finalización del servicio..</p>
         </details>
+    </section>
+    <section class="nosotros" id="nosotros">
+        <h2>Nuestro equipo desarrollador</h2>
+        <p class="nosotros-intro">Conoce a las personas que han hecho Novastream una realidad</p>
+        <div class="equipo">
+            <figure class="miembro">
+                <img src="img/JUANDIEGO.jpeg" alt="Fotografía deJuan Diego">
+                <figcaption>Juan Diego</figcaption>
+            </figure>
+            <figure class="miembro">
+                <img src="img/LORENA.jpeg" alt="Fotografía de Lorena">
+                <figcaption>Lorena</figcaption>
+            </figure>
+            <figure class="miembro">
+                <img src="img/KEIVER.jpeg" alt="Fotografía de Keiver">
+                <figcaption>Keiver</figcaption>
+            </figure>
+            <figure class="miembro">
+                <img src="img/CRISTIAN.PNG" alt="Fotografía de Cristian">
+                <figcaption>Cristian</figcaption>
+            </figure>
+        </div>
     </section>
     <section class="terminos">
         <h2>Términos y condiciones</h2>
