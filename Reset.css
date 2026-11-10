@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EDF1FE;
+}
+
+.contenedor {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 20px 40px 80px 40px;
+}
+
+.informacion {
+    width: 500px;
+}
+
+.informacion h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    color: #203C7F;
+    margin-bottom: 20px;
+}
+
+.informacion p {
+    font-size: 18px;
+    color: #262D3B;
+    line-height: 1.5;
+}
+
+.formulario {
+    width: 380px;
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    border: 2px solid #0063A6;
+    border-radius: 15px;
+    position: relative;
+}
+
+.candado {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+}
+
+.formulario h2 {
+    color: #203C7F;
+    margin-top: 0;
+}
+
+.formulario p {
+    color: #262D3B;
+    line-height: 1.4;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+    color: #262D3B;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0063A6;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.formulario button {
+    background-color: #203C7F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #784D8C;
+}
+
+.ayuda {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #C74082;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contenedor-exito {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.mensaje-exito {
+    width: 500px;
+    background-color: white;
+    padding: 40px;
+    border: 2px solid #0063A6;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.mensaje-exito h1 {
+    font-family: Georgia, serif;
+    color: #203C7F;
+    margin-bottom: 20px;
+}
+
+.mensaje-exito p {
+    color: #262D3B;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.mensaje-exito a {
+    display: inline-block;
+    background-color: #203C7F;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mensaje-exito a:hover {
+    background-color: #784D8C;
+}
