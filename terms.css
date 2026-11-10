@@ -1,0 +1,310 @@
+/* ==== ESTILOS GENERALES ====*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    color: #FFFFFF;
+    background: linear-gradient(
+        135deg,
+        #282D3C 0%,
+        #101820 100%
+    );
+}
+
+/* ===== ENCABEZADO ===== */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 22px 7%;
+    background: linear-gradient(110deg, #14275E, #203C7F, #56316F);
+    color: white;
+    box-shadow: 0 8px 20px rgba(20, 39, 94, 0.20);
+}
+
+/* LOGO NOVASTREAMS */
+
+.marca {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:bold;
+    white-space:nowrap;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #FFFFFF;
+}
+.logo strong {
+    color: #FF69B4;
+}
+
+/* MENÚ */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 11px 17px;
+    border: 1px solid #FFFFFF55;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: white;
+    color: #203C7F;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+   ========================= */
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #FFFFFF;
+    color: #20264A;
+    border: 1px solid #D8DEE8;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px #00000025;
+}
+
+
+/* =========================
+   TÍTULO
+   ========================= */
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo h1 {
+    color: #101820;
+    font-size: clamp(25px, 4vw, 34px);
+    margin-bottom: 12px;
+}
+
+.titulo p {
+    font-size: 15px;
+    color: #4B5563;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TARJETAS
+   ========================= */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+
+/* TARJETAS INDIVIDUALES */
+
+.tarjeta {
+    width: 100%;
+    padding: 22px;
+    background: #D8DEE8;
+    border: 1px solid #3781f9;
+    border-left: 4px solid #282D3C;
+    border-radius: 12px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px #10182018;
+}
+
+
+/* TÍTULOS */
+
+.tarjeta h2 {
+    color: #101820;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-right: 18px;
+}
+
+
+/* TEXTO */
+
+.tarjeta p {
+    color: #4B5563;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* CHECK */
+
+.tarjeta::before {
+    content: "✓";
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    color: #282D3C;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/* BOTON VOLVER */
+
+.volver {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.volver a {
+    display: inline-block;
+    padding: 12px 24px;
+
+    background: linear-gradient(
+        100deg,
+        #315DFF,
+        #784DCE,
+        #E83E91
+    );
+
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.volver a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 11px 24px #784DCE60;
+}
+
+
+/* PIE DE PAGINA */
+
+.pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px 15px;
+    margin-top: 70px;
+
+    background: linear-gradient(
+        110deg,
+        #14275E,
+        #203C7F,
+        #56316F
+    );
+
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* =========================
+   BOTÓN ARRIBA
+   ========================= */
+<
+.boton-arriba {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #282D3C;
+    color: white;
+    border: 1px solid #FFFFFF55;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 22px;
+    box-shadow: 0 4px 12px #00000035;
+}
+
+.boton-arriba:hover {
+    background: #FFFFFF;
+    color: #101820;
+}
+/* ===== ANIMACIÓN DEL TÍTULO ===== */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titulo {
+    animation: aparecer 0.8s ease-in-out;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 700px) {
+    .encabezado {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 22px 5%;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor {
+        width: 95%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    .titulo h1 {
+        font-size: 26px;
+    }
+}
