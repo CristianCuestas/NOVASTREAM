@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="icon" type="image/x-icon" href="images/NovaStreams.png">
+    <link rel="stylesheet" href="css/register.css">
+
+    <!--Se llama al Tailwind y el siguiente script es para evitar que me sobreescriba mi CSS.-->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        corePlugins: {
+        preflight: false
+        }
+    }
+    </script>
+</head>
+<body>
+     <section class="contenedor">
+       
+        <div class="bloque_izquierdo flex flex-1 min-w-0 flex-col justify-center items-center gap-6 p-[4vw] text-center">
+            <img src="images/NovaStreams.png" alt="NovaStream" class="logo_principal" width="500" height="500">
+            <p class="texto">Crea tu cuenta en solo unos pasos.</p>
+        </div>
+
+
+        <div class="bloque_derecho">
+
+            <h1 class="creacion">Crea tu cuenta</h1>
+
+            <!--Se modifica la clase del formulario para utilizar Tailwind-->
+            
+            <form action="#" method="post" class="formulario">
+                <fieldset>
+                   
+                    <div class="fila_formulario flex gap-4">
+                        <div class="grupo_campo">
+                            <label for="nombres">Nombres: </label>
+                            <input type="text" id="nombres" name="nombres" required/>
+                        </div>
+
+
+                        <div class="grupo_campo">
+                            <label for="apellidos">Apellidos: </label>
+                            <input type="text" id="apellidos" name="apellidos" required/>
+                        </div>
+                    </div>
+
+                    <div class="fila_formulario flex gap-4">
+                        <div class="grupo_campo">
+
+                            <label for="pais">País:</label>
+                            <select id="pais" name="pais" class="pais_select" required>
+                                <option value="" disabled selected>Selecciona un país</option>
+                                <option value="CO">Colombia</option>
+                                <option value="MX">México</option>
+                                <option value="AR">Argentina</option>
+                                <option value="CL">Chile</option>
+                                <option value="PE">Perú</option>
+                                <option value="ES">España</option>
+                                <option value="US">Estados Unidos</option>
+                            </select>
+                        
+                        </div>
+
+                        <div class="grupo_campo">
+                            <label for="nickname">Nombre de Usuario: </label>
+                            <input type="text" id="nickname" name="nickname" required/>
+                        </div>
+
+                    </div>
+                   
+                    <div class="fila_formulario flex gap-4">
+                        <div class="grupo_campo">
+                            <label for="correo">Correo: </label>
+                            <input type="email" id="correo" name="correo" placeholder="wilfredo@gmail.com" required/>
+                        </div>
+
+
+                        <div class="grupo_campo">
+                            <label for="telefono">Teléfono: </label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+573001234567" required/>
+                        </div>
+                    </div>
+                   
+                    <div class="fila_formulario flex gap-4">
+                        <div class="grupo_campo">
+                            <label for="contraseña">Contraseña: </label>
+                            <input type="password" id="contraseña" name="contraseña" minlength="8" required/>
+                        </div>
+                        <div class="grupo_campo">
+                            <label for="confirmar_contraseña">Confirmar Contraseña: </label>
+                            <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" minlength="8" required/>
+                        </div>
+                    </div>
+
+                    <div class="terminos">
+                            <input type="checkbox" id="terminos" name="terminos" required/>
+                            <label for="terminos">Acepto los <a href="terms.html" target="_blank">términos y condiciones</a></label>
+                    </div>
+                   
+                    <div class="vinculacion">
+                        <h2>Elige tu cuenta para vincular</h2>
+                        <a href="#" class="boton_google" title="Vincula tu cuenta de Youtube">
+                            <img src="images/GoogleLogo.png" alt="Google Logo" class="logos" width="50" height="50">
+                        </a>
+
+                        <a href="#" class="boton_google" title="Vincula tu cuenta de Twitch">
+                            <img src="images/TwitchLogo.png" alt="Twitch Logo" class="logos" width="50" height="50">
+                        </a>
+
+                        <a href="#" class="boton_google" title="Vincula tu cuenta de TikTok">
+                            <img src="images/TikTokLogo.png" alt="TikTok Logo" class="logos" width="50" height="50">
+                        </a>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn-enviar">Enviar datos</button>
+            </form>
+
+            <p class="inicio_seccion">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+
+        </div>
+
+
+    </section>
+
+
+</body>
+</html>
+
