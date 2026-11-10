@@ -3,113 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MainPage</title>
+    <title>NOVASTREAM | Gestión segura de datos</title>
     <link rel="stylesheet" href="mainpage.css">
 </head>
 <body>
     <header class="navigationbar">
-    <a href="#" class="logo">
+    <a href="#inicio" class="logo">
         NOVASTREAM
     </a>
-
     <nav class="navigation-menu" aria-label="Navegación principal">
         <details class="menu-desplegable">
             <summary class="menu-boton">Menú</summary>
-
             <div class="menu-contenido">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#planes">Planes</a></li>
-                    <li><a href="#faq">Preguntas frecuentes</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#social">Redes sociales</a></li>
+                    <li><a href="mainpage.html">Inicio</a></li>
+                    <li><a href="mainpage.html#planes">Planes</a></li>
+                    <li><a href="mainpage.html#faq">Preguntas frecuentes</a></li>
+                    <li><a href="mainpage.html#nosotros">Nosotros</a></li>
+                    <li><a href="mainpage.html#social">Redes sociales</a></li>
                 </ul>
             </div>
         </details>
-
         <div class="navigation-links">
-            <a href="#planes">Planes</a>
-            <a href="#faq">Preguntas frecuentes</a>
-            <a href="#nosotros">Nosotros</a>
+            <a href="mainpage.html#planes">Planes</a>
+            <a href="mainpage.html#faq">Preguntas frecuentes</a>
+            <a href="mainpage.html#nosotros">Nosotros</a>
         </div>
     </nav>
-
     <nav class="navigation-buttons" aria-label="Acceso de usuario">
         <a href="login-usuario.html" class="button btn-login">Ingreso</a>
         <a href="register.html" class="button btn-register">Registro</a>
     </nav>
 </header>
+<main>
     <section class="logo-principal">
         <h1 class="logo-principal-logo">NOVASTREAM</h1>
         <img src="img/ISOTIPO.png" alt="Logotipo NOVASTREAM" class="logo-imagen">
         <p class="logo-principal-texto">Controla tus datos de forma segura y eficiente</p>
-        <a href="register.html" class="button btn-register">Registrate hoy</a>
+        <a href="register.html" class="button btn-register">Regístrate hoy</a>
     </section>
     <section class="planes" id="planes">
-
     <input type="radio" name="periodo" id="mensual" checked>
     <input type="radio" name="periodo" id="anual">
-
     <div class="selector-periodo">
         <label for="mensual">Mensual</label>
         <label for="anual">Anual</label>
     </div>
-
     <div class="contenedor-planes">
-
         <article class="plan">
             <h2>Plan básico</h2>
             <p>Acceso limitado a funciones esenciales</p>
-
             <div class="precio precio-mensual">
                 $35.000
                 <span>/mes</span>
             </div>
-
             <div class="precio precio-anual">
                 $350.000
                 <span>/año</span>
             </div>
-
             <a href="#" class="button btn-select">Seleccionar</a>
         </article>
-
         <article class="plan plan-destacado">
             <span class="etiqueta-plan">Recomendado</span>
-
             <h2>Plan PRO</h2>
             <p>Acceso a todas las funciones y soporte semanal</p>
-
             <div class="precio precio-mensual">
                 $55.000
                 <span>/mes</span>
             </div>
-
             <div class="precio precio-anual">
                 $550.000
                 <span>/año</span>
             </div>
-
             <a href="#" class="button btn-select">Seleccionar</a>
         </article>
-
         <article class="plan">
             <h2>Plan Premium</h2>
             <p>Acceso completo a todas las funciones y soporte diario</p>
-
             <div class="precio precio-mensual">
                 $80.000
                 <span>/mes</span>
             </div>
-
             <div class="precio precio-anual">
                 $700.000
                 <span>/año</span>
             </div>
-
             <a href="#" class="button btn-select">Seleccionar</a>
         </article>
-
     </div>
 </section>
     <section class="faq" id="faq">
@@ -136,7 +116,7 @@
         </details>
         <details class="faq-item">
             <summary>¿Puedo cancelar cuando quiera?</summary>
-            <p>Sí. Puedes solicitar la cancelación de tu suscripción cuando lo necesites desde las opciones disponibles en tu cuenta. Antes de realizar el proceso, te recomendamos consultar los términos y condiciones de Novastream para conocer las condiciones aplicables a tu suscripción y cualquier aspecto relacionado con la finalización del servicio..</p>
+            <p>Sí. Puedes solicitar la cancelación de tu suscripción cuando lo necesites desde las opciones disponibles en tu cuenta. Antes de realizar el proceso, te recomendamos consultar los términos y condiciones de Novastream para conocer las condiciones aplicables a tu suscripción y cualquier aspecto relacionado con la finalización del servicio.</p>
         </details>
     </section>
     <section class="nosotros" id="nosotros">
@@ -144,7 +124,7 @@
         <p class="nosotros-intro">Conoce a las personas que han hecho Novastream una realidad</p>
         <div class="equipo">
             <figure class="miembro">
-                <img src="img/JUANDIEGO.jpeg" alt="Fotografía deJuan Diego">
+                <img src="img/JUANDIEGO.jpeg" alt="Fotografía de Juan Diego">
                 <figcaption>Juan Diego</figcaption>
             </figure>
             <figure class="miembro">
@@ -166,7 +146,8 @@
         <p>Al registrarte en Novastream, aceptas nuestros términos y condiciones. Por favor, lee cuidadosamente antes de continuar.</p>
         <a href="terms.html" class="button btn-terms">Leer términos y condiciones</a>
     </section>
-    <footer class="footer">
+</main>
+<footer class="footer">
         <div class="social" id="social">
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
@@ -180,7 +161,6 @@
                 <option value="fr">Francés</option>
             </select>
         </div>
-    </footer>
-    
+</footer>
 </body>
 </html>
