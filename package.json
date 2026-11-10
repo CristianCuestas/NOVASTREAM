@@ -1,0 +1,25 @@
+{
+  "name": "nova-stream",
+  "version": "1.0.0",
+  "description": "NOVASTREAMS",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristianCuestas/NOVASTREAM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CristianCuestas/NOVASTREAM/issues"
+  },
+  "homepage": "https://github.com/CristianCuestas/NOVASTREAM#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}

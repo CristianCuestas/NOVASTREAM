@@ -486,15 +486,10 @@ label:focus-visible {
     margin-bottom: 20px;
 }
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 
+    padding:
     2rem
     clamp(1rem, 5vw, 3rem);
-    background-color: var(--pantone-navy-blazer);
+    background-color: var(--pantone-black-6);
 }
 .footer a {
     color: var(--pantone-royal-lilac);
@@ -508,18 +503,13 @@ label:focus-visible {
     border-radius: 4px;
     border: 1px solid var(--pantone-strong-blue);
 }
-.social {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
 /* Responsive Design Móvil Vertical*/
 @media (max-width: 767px) {
     .navigationbar {
         grid-template-columns: 1fr auto;
         grid-template-areas:
         "logo buttons"
-        "menu bottons";
+        "menu buttons";
         justify-items: stretch;
         align-items: center;
     }
@@ -552,14 +542,7 @@ label:focus-visible {
         filter: none;
     }
     .equipo .miembro:hover {
-        transform: scale(1.5);
-    }
-   .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-    .social {
-        justify-content: center;
+        transform: scale(1.2);
     }
     .contenedor-planes {
         grid-template-columns: 1fr;

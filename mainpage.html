@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOVASTREAM | Gestión segura de datos</title>
+    <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="mainpage.css">
 </head>
 <body>
@@ -142,20 +143,20 @@
         <a href="terms.html" class="button btn-terms">Leer términos y condiciones</a>
     </section>
 </main>
-<footer class="footer">
-        <div class="social" id="social">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
-        </div>
-        <div class="idioma">
-            <label for="lang">Idioma:</label>
-            <select id="lang">
-                <option value="es">Español</option>
-                <option value="en">Inglés</option>
-                <option value="fr">Francés</option>
-            </select>
-        </div>
+<footer class="footer flex flex-col items-center gap-6 text-center md:flex-row md:justify-between md:text-left">
+    <div id="social" class="flex flex-wrap justify-center gap-4 md:justify-start">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+    </div>
+    <div class="idioma flex items-center gap-2">
+        <label for="lang">Idioma:</label>
+        <select id="lang">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+        </select>
+    </div>
 </footer>
 </body>
 </html>
